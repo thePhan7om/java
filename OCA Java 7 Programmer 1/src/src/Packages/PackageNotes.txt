@@ -1,0 +1,47 @@
+* packages define where classes will be located in the hierarchical directory structure.
+
+*Its better to import classes explicity - duh
+    * user Import java.util.Vector instead of java.util.*
+
+* Static imports are a feature of Java 5 static imports, allow you to import static members
+- See StaticImports.java for Example
+
+---- 2 Minute Drill from the book:
+
+   Packages are containers for classes.
+  *    A package statement defines the directory path where files are stored.
+   *   A package statement uses periods for delimitation.
+   *   Package names should be lowercase and separated with underscores between words.
+   *   Package names beginning with java.* and javax.* are reserved.
+   *   There can be zero or one package statement per source file.
+   *   An import statement is used to include source code from external classes.
+   *   An import statement occurs after the optional package	 statement and before the class definition.
+   *   An import statement can define a specific class name to import.
+   *   An import statement can use an asterisk to include all classes within a given package.
+   Understand Package-Derived Classes
+   *   The Java Abstract Window Toolkit API is included in the java.awt package and subpackages.
+   *   The java.awt package includes GUI creation and painting graphics and *s functionality.
+   *   The Java Swing API is included in the javax.swing package and subpackages.
+   *   The javax.swing package includes classes and interfaces that support lightweight GUI component functionality.
+   *   The Java Basic Input/Output-related classes are contained in the java.io package.
+   *   The java.io package includes classes and interfaces that support input/ output functionality of the file system, data streams, and serialization.’
+   *   Java networking classes are included in the java.net package.
+   *   The java.net package includes classes and interfaces that support basic networking functionality that is also extended by the javax.net package.
+   *   Fundamental Java utilities are included in the java.util package.
+   *   The java.util package and subpackages include classes and interfaces that support the Java Collections Framework, legacy collection classes, event model, date and time facilities, and internationalization functionality.
+   Understand Class Structure
+   *   Naming conventions are used to make Java programs more readable and maintainable.
+   *   Naming conventions are applied to several Java elements including class names, interface names, method names, instance and static variable names, parameter and local variable names, generic type parameter names, constant names, enumeration names, and package names.
+   *   The preferred order of presenting elements in a class is data members, followed by constructors, followed by methods. Note that the inclusion of each type of element is optional.
+   Compile and Interpret Java Code
+   *   The Java compiler is invoked with the javac[.exe] command.
+   *   The .exe extension is optional on Microsoft Windows machines and is not present on UNIX-like systems.
+   *   The compiler’s -d command-line option defines where compiled class files I should be placed.
+   *   The compiler’s -d command-line option will include the package location if the class has been declared with a package statement.
+   *   The compiler’s -classpath command-line option defines directory paths in search of classes.
+   *   The Java interpreter is invoked with the java [.exe] command.
+   *   The interpreter’s -classpath switch defines directory paths to use at runtime.
+   *   The interpreter’s -D command-line option allows for the setting of system property values.
+   *   The interpreter’s syntax for the -D command-line option is -Dproperty=value.
+   *   The interpreter’s -version command-line option is used to return the version of the JVM and exit.
+   *   The -h command-line option can be applied either to the compiler or the interpreter to print out the tools usage information.

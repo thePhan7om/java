@@ -1,0 +1,35 @@
+
+Java Statements
+ - break            - Exit Switch
+ - case             - part of a switch
+ - continue         - used to terminate current iteration of a loop
+ - while            - a loop
+ - do-while         - loop until
+ - empty            - used where no functionality is required, represented by a ;
+ - expression       - used to evaluate expressions
+ - for loop         - loop
+ - enhanced for loop - used for iteration through an iterator
+ - if                - conditional
+ - if then           - conditional
+ - if then else      - conditional
+ - labled            - to give a statement a prefixed label
+ - return            - exit method, return value
+ - switch            - branching based on conditions
+ - synchronized      - used for access control of threads
+ - throw             - thrown an exception
+ - try catch finally - used for exception handling.
+
+
+Expressions
+
+- Assignment -  variable = 7
+- pre-increament - ++ variable
+- pre decrement - --variable
+- post increament - variable++
+- post decrement - variable--
+- Method Invocation performMethod()
+- Object creation - new Classname()
+
+
+Int variable // declaration
+varable = 100 //Assignement

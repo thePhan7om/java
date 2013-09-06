@@ -1,0 +1,22 @@
+-- Package self Test
+
+Understanding Packages:
+
+1- A & B
+2- D
+3- B
+4 - A
+
+Understand Package Derived Classes
+
+5 - D
+6 - C
+7 - C
+8 - C
+
+9 - D
+
+Class Structure
+10 - A,B
+11 =  A
+12 - D - Wrong B
