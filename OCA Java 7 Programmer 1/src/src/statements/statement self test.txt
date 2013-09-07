@@ -1,0 +1,21 @@
+Statements Self Test
+
+Understand Assignment Statements
+
+1 - D 
+2 - B
+3 - A C
+
+Create and Use Conditional Statements
+
+4 - C
+5 - A D X - A,B,C
+6 - E X - F all will compile
+7 - C X - A
+
+Create and Use Iteration Statements
+
+8 - A B C
+9 - B
+10 - B
+

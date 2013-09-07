@@ -1,0 +1,30 @@
+Statements 2 Min Drill
+
+Understand Assignment Statements
+-   Assignment statements assign values to variables.
+-   Assignment statements that do not return boolean types will cause the compiler to report an error when used as the expression in an if statement.
+-   Trying to save an invalid literal to a declared primitive type variable will result in a compiler error.
+
+Create and Use Conditional Statements
+-   Conditional statements are used for determining the direction of flow based on conditions.
+-   Types of conditional statements include the if, if-then, if-then-else, and switch statements.
+-   The default case statement can be placed anywhere in the body of the switch statement.
+-   The expressions used in if statements must evaluate to boolean values, or the application will fail to compile.
+-   Boolean wrapper classes are allowed as expressions in if statements because they are unboxed. Remember that unboxing is the automatic production of primitive values from their related wrapper classes when the primitive value is required.
+
+Create and Use Iteration Statements
+-   Iteration statements are designed for iterating through pieces of code.
+-   Iteration statements include the for loop, enhanced for loop, and the while and do-while statements.
+-   The for loop statement has main components that include an initialization part, an expression part, and an update part.
+-   The enhanced for loop statement is used for iteration through an iterable object or array.
+-   The while loop statement is used for iteration based on a condition.
+-   The do-while statement is used for iteration based on a condition. The body of this statement is always executed at least once.
+
+Create and Use Transfer of Control Statements
+-   Transfer of control statements interrupt or stop the flow of execution.
+-   Transfer of control statements include continue, break, and return statements.
+-   The continue statement is used to terminate the current iteration of a do, for loop; enhanced for loop; and while or do-while loop and continue with the next iteration.
+-   The break statement is used to exit or force an abrupt termination of the body I of the switch conditional statement as well as the body of the do, for loop, enhanced for loop, while and do-while iteration statements.
+-   The return statement is used to exit a method and may return a specified value.
+-   The labeled statement is used to give a statement a prefixed label. It is used with the continue and break statements.
+-   A block is a sequence of statements within braces—for example, {int x=0; int y=1}.

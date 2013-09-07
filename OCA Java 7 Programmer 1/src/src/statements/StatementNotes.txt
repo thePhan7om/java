@@ -1,0 +1,63 @@
+
+Java Statements
+ - break            - Exit Switch
+ - case             - part of a switch
+ - continue         - used to terminate current iteration of a loop
+ - while            - a loop
+ - do-while         - loop until
+ - empty            - used where no functionality is required, represented by a ;
+ - expression       - used to evaluate expressions
+ - for loop         - loop
+ - enhanced for loop - used for iteration through an iterator
+ - if                - conditional
+ - if then           - conditional
+ - if then else      - conditional
+ - labled            - to give a statement a prefixed label
+ - return            - exit method, return value
+ - switch            - branching based on conditions
+ - synchronized      - used for access control of threads
+ - throw             - thrown an exception
+ - try catch finally - used for exception handling.
+
+
+Expressions
+
+- Assignment -  variable = 7
+- pre-increament - ++ variable
+- pre decrement - --variable
+- post increament - variable++
+- post decrement - variable--
+- Method Invocation performMethod()
+- Object creation - new Classname()
+
+
+Int variable // declaration
+varable = 100 //Assignement
+
+Conditional Statements
+
+- If = if
+- If then = If, else if 
+- if then else = if, else if , else
+- Switch = switch, case, default, break
+
+* Inside the EXAM
+- The if satement allows for the optinal use of the else branch 
+- The if-then statement must have at least one else if
+- The if-then-else statement must have at least one else if branch and an optoonal else branch 
+
+- IF statement can accept any expression that returns a boolean value. if it evaluates to true
+then all subsequent else are skipped. 
+
+- if statements must result in a boolean type Booleans are also allowed as autoboxing happpens automatically
+
+Switch Statement
+a conditional used to match the value from a switch statement exprssion against a value
+ associated with a case key
+ 
+**Exam Watch 
+when 2 case statements appear with the same switch appear with the same value a
+compiler error is thrown 
+
+
+

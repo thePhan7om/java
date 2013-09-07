@@ -1,0 +1,31 @@
+- For loop - for, break 
+		-for(i=0;i<j;i++){}
+- enchanced for loop - for, break, continue
+		- for (Fish f: listOfFish) {};
+-While - while, break,continue
+		- while (value ==1){}
+-do while - do, while, break 
+		-do {} while ( value ==1);
+		
+* For Loop
+
+the for loop is designed to iterate through code, 
+
+* INSIDE THE EXAM
+
+Exam designers took the time to work corner cases to appear to be correct
+code but is not. 
+
+* Enchanced for loop
+ 
+ Used to iterate a collection or array or any object that implements the
+ iterable interface. loops can be terminated with the break statement
+ 
+* While Statement
+
+the while loop statement evaluates an expression and executes the while loop bosy
+only if the expression evaluates to true
+
+* Do while statement
+
+similar to the while loop statement except it always exeutes the body atleast once
