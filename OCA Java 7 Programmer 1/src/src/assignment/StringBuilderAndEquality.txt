@@ -1,0 +1,36 @@
+*String Builder
+
+String builder repersents a mutable character String 
+where as the String bufer class is a threadsafe mutable character String
+
+* Common methods of StringBuilder
+
+- append - appends the supplied data as a character string
+- insert - inserts a string representation started from a specified location
+- append - removes characters from a given start and end
+- deleteCharAt - removes a single character from a given point. 
+- reverse - reverses the order of the character sequence
+
+** String Equality
+
+- One way to compare objects in java is by performing a comparison using the equals()
+method
+
+use .equals for testing values
+use == for comparing object instances
+
+String string = "test"
+String String2 = "pew"
+string.equals(String2) // returns false
+
+String string = "test"
+String String2 = "test"
+string.equals(String2) // returns true
+
+String string = "test"
+String String2 = "test"
+string == String2 // returns false
+
+String string = "test"
+String String2 = string
+string == String2 // returns true

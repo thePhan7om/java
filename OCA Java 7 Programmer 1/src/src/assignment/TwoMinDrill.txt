@@ -1,0 +1,66 @@
+The exam covers the following assignment and compound assignment operators: =, +=, and -=.
+-   The assignment operator ( = ) assigns values to variables.
+-   The additional compound assignment operator is used for shorthand. As such, a=a+b is written a+=b.
+-   The subtraction compound assignment operator is used for shorthand. As such, a=a-b is written a-=b.
+-   The exam covers the following arithmetic operators: +, -, *, /, %, ++, and - -.
+-   The addition operation ( + ) is used to add two operands together.
+-   The subtraction operator ( - ) is used to subtract the right operand from the left operand.
+-   The multiplication operator (*) is used to multiply two operands together.
+-   The divisor operator ( / ) is used to divide the right operand into the left operand.
+-   The modulus operator ( %) returns the remainder of a division.
+-   The prefix increment ( + + ) and prefix decrement ( - - ) operators are used to increment or decrement a value before it is used in an expression.
+-   The postfix increment ( + + ) and postfix decrement ( - - ) operators are used to increment or decrement a value after it is used in an expression.
+-   The exam covers the following relational operators: <, <=, >, >=, ==, and ! =.
+-   The less than operator (<) returns true if the left operand is less than the right operand.
+-   The less than or equal to operator (< = ) returns true if the left operand is less than or equal to the right operand.
+-   The greater than operator ( >) returns true if the right operand less than the left operand.
+-   The greater than or equal to operator (>=) returns true if the right operand is less than or equal to the left operand.
+-   The equal to equality operator ( = = ) returns true if the left operand is equal to the right operand.
+-   The not equal to equality operator ( ! =) returns true if the left operand is not equal to the right operand.
+-   Equality operators can test numbers, characters, Booleans, and reference variables.
+-   The exam covers the following logical operators: !, &&, and | |.
+-   The logical negation (inversion) operator ( ! ) negates the value of the boolean operand.
+-   The logical AND (conditional AND) operator (&&) returns true if both operands are true.
+-   The logical AND operator is known as a short-circuit operator because it does not evaluate the right operand if the left operand is false.
+-   The logical OR (conditional OR) operator ( | | ) returns true if either operand is true.
+-   The conditional OR operator is known as a short-circuit operator because it does not evaluate the right operand if the left operand is true.
+
+Understand Operator Precedence
+-   Operators with a higher precedence are evaluated before operators with a lower precedence.
+-   Operator precedence is overridden by the use of parentheses.
+-   When multiple sets of parentheses are present, relative to operator precedence, the innermost set is evaluated first.
+-   Operators in an expression that have the same precedence will be evaluated from left to right.
+
+Use String Objects and Their Methods
+-   An object of the String class represents an immutable character string.
+-   Mutable means changeable. Note that Java variables such as primitives are mutable by default and can be made immutable by using the final keyword.
+-   The CharSequence interface is implemented by the String classes as well as the StringBuilder and StringBuffer classes. This interface can be used as an argument in the String class’s replace method.
+-   The string concatenation operator (+) joins two strings together and creates a new string.
+-   The string concatenation operator will join two operands together, as long as one or both of them are strings.
+-   The String class’s charAt method returns a primitive char value from a specified int index value in relationship to the referenced string.
+-   The String class’s indexOf method returns a primitive int value representing the index of a character or string in relationship to the referenced string.
+-   The String class’s length method returns a primitive int value representing the length of the referenced string.
+-   The String class’s concat method concatenates the specified string to the end of the original string.
+-   The String class’s replace method returns strings replacing all characters or strings in relationship to the referenced string.
+-   The String class’s startsWith method returns a primitive boolean value representing the results of a test to see if the supplied prefix starts the referenced string.
+-   The String class’s endsWith method returns a primitive boolean value representing the results of a test to see if the supplied suffix ends the referenced string.
+-   The String class’s substring methods return new strings that are substrings of the referenced string.
+-   The String class’s trim method returns the entire string minus leading and trailing whitespace characters in relationship to the referenced string.
+-   The String class’s toLowerCase method returns the entire string as lower case characters.
+-   The String class’s toUpperCase method returns the entire string as uppercase characters.
+-   The String class’s equalsIgnoreCase method returns a boolean value after comparing two string while ignoring case consideration.
+
+Use StringBuilder Objects and Their Methods
+-   An object of the StringBuilder class represents a mutable character string.
+-   An object of the StringBuffer class represents a thread-safe mutable character string.
+-   The StringBuilder class makes use of the following methods that the String class has also declared: charAt, indexOf, length, replace, startWith, endsWith, and substring.
+-   The StringBuilder class’s append method appends the supplied data as a character string.
+-   The StringBuilder class’s insert method inserts the string representation of the supplied data starting at the specified location.
+-   The StringBuilder class’s delete method removes characters in a substring of the StringBuilder object.
+-   The StringBuilder class’s deleteCharAt method removes the character from the specified index.
+-   The StringBuilder class’s reverse method reverses the order of the character sequence.
+
+Test Equality Between Strings and other Objects
+-   Use the equals method of the String class (overridden from the Object class) to test the equality of the character sequence values of string objects.
+-   Use the == operator to test to see if the object references (for example, the memory addresses) of strings are equal.
+-   Use the == operator to test the equality of primitives.

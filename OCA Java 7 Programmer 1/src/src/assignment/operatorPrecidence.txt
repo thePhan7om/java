@@ -1,0 +1,21 @@
+*Operator Precedence
+
+Operator precedence is the order in which operators will be evaluated when several are
+included in a expression
+
+1 - [],(),.
+2 - ++ --
+3 - ++ -- (prefix) !, - 
+4 (type), new
+5 *,/,%
+6 +,-
+7 <,<=,>,>=
+8 ==, !=
+9 &
+10 |
+11 ^
+12 &&
+13 ||
+14 ?,:
+15 bit wise stuff
+

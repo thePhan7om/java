@@ -1,0 +1,54 @@
+* Strings and tings
+
+String objects are used to represent 16 bit unicode strings
+
+String quote = "Dead men tell no tails";
+	- This creates a new String
+	
+String doesnt change after the value is changed
+
+	- Strings are immuable modification creates a new String
+	
+	quote.replace("No Tails","Tales");
+	System.out.println(quote);
+	--- Dead Men Tell No Tails
+quote was not assigned after a new string was created. 
+
+
+String quote1; // reference variable with no assigned object
+quote1 = "Ahoy Matey" assigns string object to the refference
+
+String quote2 = new String //reference variable
+String quote2 = new String(""); // same statement
+String quote3 = "a String with no constructor";
+String quote4 = new String("A string using a constuctor")
+
+*String Concatenation Operator
+ 	- + = String Concatenation Operator
+ 	
+ 	String item  = "doubloon";
+ 	String question = "What is a "+question+" ?";
+ 	
+* The toString method
+
+the object class has a method that returns a string representation of object
+this is the toString method, all java classes inherit this method, 
+good practice is to override this method to best show represent the data. 
+
+* the charAt method
+
+-returns a primative char value for a specified int
+
+* indexOf Method
+-returns primative int values representng the index of a character
+can be a int for the indexchar or can be a char
+
+* the length method
+	- the primative int for the number of charaters in a String
+
+** EXAM WATCH **
+ - The String class uses the length)() method 
+ - Arrays used array.length with no brackets
+ 
+*T The Concat method
+ - the concat method concatenates the specified String to the end of the original String
