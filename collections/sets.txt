@@ -1,0 +1,44 @@
+*Sets
+Sets store objects optimised for efficiency which may not be the order they were entered
+inserts and removes are faster than with lists
+
+- HashSet and TreeSet both implement the set interface
+	uses hash tables and binary search trees. both implementations arrange the set elements
+	so that finding adding and removing is fast but use different strategies 
+	
+* HashTable
+	basic idea of a hash table is elements are grouped into smaller collections of elements that
+	share some characteristic. imagine books grouped by colour, hash tables use hash codes 
+	similar hash codes are grouped
+	
+Hashsets can contain hashsets new HashSet<HashSet<String>>()
+
+to use HashSets you should override the HashCode and Equals for the class to be stored
+unless all elements are distinct
+
+* TreeSet
+Elements are stored in a sorted order, eg, books might be sorted by height or alphabetically
+the elements are not stored in an array, that would make adding and removing elements to slow
+instead they are stored in nodes. like a linked list, instead of being arranged liniarly 
+elements are arranged into a tree. 
+
+to use TreeSet it must be possible to calcualte which object is bigger, 
+
+- You can form tree sets from any class that implements the Comparable interface. 
+
+- Use TreeSet if you want to visit elements in sorted order
+
+* Working with Sets
+
+- Sets do not contain duplicates, duplicates are ignored
+- Use a SetIterator, 
+	- Set Iterator visits the elements in order in which the set implementation keeps them 
+	
+	- Set Iterator doesnt have an add method
+	- You can not add an element to a set position
+	
+* Set Methods
+	- add
+	-contains
+	-remove
+		

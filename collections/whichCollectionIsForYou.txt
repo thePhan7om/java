@@ -1,0 +1,25 @@
+* How to Chose a collection
+
+* Determine how you access the values
+	- By Integer Postion - ArrayList
+	- By Key that is not part of the Object - Map
+	- Values accessed by first in first out - Queue
+	- Values accessed by last in first out - Stack
+* Determine the element type or key/value type
+	- For a list or set determine the type of the elements you want to store
+* Determine whether element or key order matters
+	- when visiting elements for a collection or keys from a map do we care about order
+	 	- Elements or keys myst be sorted - TreeSet,TreeMap
+	 	- Elements mst be the same order as when inserted, - LinkedList, ArrayList
+	 	- Order doesnt matter - HashSet,HashMap
+*Determine which operations must be fast
+	- Find Elements fast - HashSet
+	- Add or remove at beginning or end, LinkedList
+	-Only Insert or remove from the end so speed isnt effected ArrayList
+*For HashSets and HashMaps decided wheather you need to implement hashCode and equals
+	- if elements belong to another class check it has its own hashCode and equals
+	- if not determine how you want to compare the elements by identity, if you never
+	construct 2 distinct elements with the same contents do nothing
+	- else create your own methods
+* If using tree do you need to provide a comparaitor
+	

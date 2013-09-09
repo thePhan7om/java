@@ -1,0 +1,36 @@
+Collections
+
+- Java collections framework is one of the standard librarys
+- a hierarchy of interface types and classes for collecting objects each interface type is implemented 
+by one or more classes. 
+
+			<<Interface>>							         		<<Interface>>
+		     Collection								    			     Map
+		        
+	<<Interface>>	<<Interface>>	   		   <<Interface>>			HashMap	TreeMap
+		List			Queue			 	      Set
+ArrayList	Stack	LintedList	PrioriryQueue	HashSet TreeSet
+
+
+-- A list is a java collection that remembers the order of its elements
+
+-- A Set is an unordered Collection of unique elements - No Dups
+	-- Sets are faster than lists as it doesnt care about the order of things
+
+-- Another way to gain efficiency is to reduce the number of operations, 
+	-- A Stack remembers the order but doesnt allow to insert elements anywhere other than at the start
+	-- A Queue adds elements to the end and removes them from the top
+
+-- A Map keeps associates between key and value objects 
+	- Barcode = key Book = value
+
+* Collection Interface Methods
+	-size();
+	-add()
+	-toString()
+	-remove();
+	-contains()
+	-iterator()
+	
+
+	

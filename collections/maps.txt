@@ -1,0 +1,14 @@
+* Maps
+- Map allows you to associate the elements from a keyset with elements from a value collection
+you use the map when you want to loop up the objects using the key. 
+The HasHMap and TreeMap classes both implement the Map Interface
+
+* Map Methods
+-put
+-get
+-keySet
+-remove
+
+- To Find all key and values in a map iterate through the key set and find the values that
+correspond to the keys
+

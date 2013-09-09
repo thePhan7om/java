@@ -1,0 +1,35 @@
+* Stacks, Queues, Priority Queues (The Things you never use)
+
+* Stacks
+	- A Stack is a collection of elements with first-in last-out retreval
+	
+	- A Stack lets you insert and remove elements only at one ends called top of the stack
+		- Undo is a Stack operation
+	
+- Stack Methods
+	-push
+	-pop
+	-peek - look but dont remove
+
+* Queues
+	- A Queue is a collection of elements with first-in first-out retrieval
+	
+	a typical application is a print queue. 
+	- LinkedList implements Queue
+
+- Queue Methods
+	-push
+	-pop
+	-peek - look but dont remove
+
+* Priority Queues
+	- When Removing an element from a queue the most urgent priority is removed. 
+	A Priority Queue collects elements each of which has a priority, 
+		- Example a collection of work requests most important work is done first. 
+		
+		PriorityQueue<WorkOrder> q = new PriorityQueue<WorkOrder>();
+		q.add(new WorkOrder(1,"do important thing");
+		q.add(new WorkOrder(2,"Order Stuff");
+		q.add(new WorkOrder(3,"cleanthing");
+		
+		- calling q.remove removes the one the lowest priority value i.e the most important thing. 

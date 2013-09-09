@@ -1,0 +1,47 @@
+*Linked List
+
+- A linked list is a data structure used for collecting a sequence of objects that allow 
+efficient addition and removal of elements in the middle of a sequence. 
+
+- Structure of linked lists
+Imagine a program that maintains a sequence of employee names, if an employee leaves the name must be removed
+in an array that hole needs to be closed up by removing all objects that come after it, 
+ the same is true for adding to the middle of an array, all the elements need to move up and down 
+ the larger the array the more processing required. 
+ 
+ - A Linked list consists of a number of nodes, each of which has a reference to the next node. 
+ 
+	- Linked list uses a sequence of nodes, a node is an object that stores an element
+	and references to the neighbouring nodes in the sequence. 
+	
+	Tom <> Diana <> Harry 
+	When you add a new node only the neighboring node references are updated
+	Tom<> Diana<>Romeo<>Harry
+	Same is true when a node is removed
+	Tom<>Harry
+	
+-- Adding and removing elements at a given node is efficient in a linked list. 
+-- Visiting elements of a linked list in sequential order is efficient but random access is not
+
+* Linked list methods
+	-addLast - add an element to the end of the list
+	-addFirst - add an element to the beginning of the list
+	-getFirst - get element stored at the start
+	-getLast - gets the last element
+	-removeFirst/removeLast
+	-listIterator - provides a list of visiting all elements
+	
+*List iterators
+- Use a list iterator to access elements inside a linkedList
+- Nodes in linkedList store 2 links the next element and the previous one
+	- called a doublyLinkedList
+
+*ListIterator Methods
+	-next
+	-hasNext
+	-previous
+	-hasPrevious
+	-add
+	-remove
+	
+	
