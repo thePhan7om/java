@@ -1,0 +1,51 @@
+* Generics
+
+Generic programming is the creation of programming constructs that can be used with many different types
+
+- In Java generic programming can be achieved with inheritance or with type parameters
+
+- When declaring a generic class you supply a variable for each type parameter
+standard library declares the class ArrayList<E> where E is a type of variable
+
+- A generic class has one or more type parameters
+	- you could use another name such as ElementType instead of E
+	In order to use a generic class you need to instantiate that paramater type
+		-ArrayList<BankAccount>
+		-ArrayList<Measurable>
+
+- Type parameters can be instantiated with class or interface types
+	- cannot use primative types ArrayList<double> = bad ArrayList<Double> good
+	
+	generic classes are safer as you cannot add the wrong element types, you could with Object
+- Type Parameters make generic code easier to read
+
+
+* Generic Types
+
+// Simple Generic class
+	public class Pair<T,S>
+	{
+		private T first;
+		private S second;
+		...	
+		public T getFirst(){ return first;}
+		...
+	}
+///
+
+
+- Type Variable
+	E	- Element Type in a collection
+	K 	- Key in a Map
+	V 	- Value in a Map
+	T 	- General Type
+	S,U	- Additional General types
+	user <> brackets
+	
+	pubic class Pair <T,S>;
+
+- Type Variables in a generic class follow the class name and are enclosed in angle brackets
+
+- Use Type Parameters for the types of generic instance method parameter variables and return types
+	- can start with a normal class then refactor to make it more generic
+	

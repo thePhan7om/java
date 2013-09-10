@@ -1,0 +1,18 @@
+* Generic Methods
+
+- A generic method s a method with a type parameter
+
+A generic method is a method with the type paramter such a method can occur in a class 
+that itself is not generic
+
+public class ArrayUtil 
+{
+	// Prints all elements in a array
+	
+	public static <T> void print(T[] a)
+	{...}
+}
+
+supply the type parameters of a generic method between the modifiers and the method return type
+
+- When calling a generic method you need not instantiate the type parameters

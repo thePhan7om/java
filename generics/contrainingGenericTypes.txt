@@ -1,0 +1,73 @@
+* Constraining Type Parameters
+	- Type parameters can be constrained with bounds
+
+- it is often necessary to specify what type can be used in a generic class or method
+Consider a generic method that finds the average of the values in a arrayList. how can 
+you compute averages if you know nothing about element type
+
+public interface Measurable
+{
+	double getMeasure();
+}
+
+- you can place restrictions on the type of generic classes and methods
+- can constrain elements requireing that the type implement measurable can be achieved 
+by adding the extends Measurable
+
+public static <E extends Measurable> double average (ArrayList<E> objects)
+	// Supply the type variable before the return type
+{
+	if (objects.size()==0){return 0;}
+	double sum =0;
+	for (E obj :objects)
+		{
+			sum = sum+obj.getMeasure();
+		}
+	return sum/objects.size();	
+}
+
+- Inheritance and Generics dont mix
+
+* Wild cards
+
+- Often necessary to formulate subtle constrains on type parameters WildCard Types where 
+invented for the purpose
+
+Wildcard with lower bound 	- ? extends B 	- Any subtype of B
+Wildcard with upper bound 	- ? super B 	- Any supertype of B
+Unbounded wildcard			- ?				- Any Type
+
+public void addAll(LinkedList<? extends E> other)
+{	
+	ListIterator<E> iter = other.listIterator();
+	while(iter.hasNext())
+		{	
+			add(iter.next());
+		}
+}
+
+the method adds all the elements of other to the end of the linked list. 
+the addAll method doesnt require a specific type for the element other, insread it allows
+you to use any type that is a subtype of E, for example can use addAll to add a LinkedList<SavingsAccount>
+to a LinkedList<BankAccount>
+
+public static <E extends Comparable<E>> E min(ArrayList<E>a)
+
+this is too restictive, suppose BankAccount implements Comparable<BankAccount> the subclass
+SavingsAccount> also implements Comparable<BankAccount> and not Comparable<SavingsAccount>
+if you want to use the min method with SavingsAccount
+
+so should be 
+
+public static <E extends Comparable<? super E>> E mn(ArrayList<E> a)
+
+
+// In English 
+the element type E:
+	is an Typed Object which extends Comparable 
+	Where it is comparing Elements which are the superclass of E
+	
+	if E was SavingsAccount the Comparable would be BankAccount as it is the super of 
+	SavingsAccount;
+	
+//

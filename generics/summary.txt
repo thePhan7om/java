@@ -1,0 +1,22 @@
+* Generics Summary
+
+* Describe Generic classes and type parameters
+	In java generic programming can be achieved with inheritance or the type parameters
+	- A Generic Class has more than one Type Parameter
+	- Type Parameters can be instanitated with class or interface types
+	- Type parameters can make generic code safer and easier to read
+
+
+* Implement generic classes and interfaces
+	- Type variables of a generic class ollow the class name and are enclosed in angle brackets
+	- Use type parameters for the types of generic instance variables, method and parameter types
+
+* Implement generic methods
+	- A generic method is a method with a type parameter
+	- Supply the type parameters of a generic method between modifiers and method return type
+	- When calling a generic method you need not instantiate the type parameters
+
+* Specify constraints on type parameters
+
+	- Type parameters can be constrained in bounds
+
