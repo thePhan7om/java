@@ -1,0 +1,53 @@
+*Threads
+
+A Thread is a program unit a program unit that is executed concurrently with the other parts 
+of the program 
+
+
+Write a class that implements the Runnable interface. 
+That interface has a single method called run:
+
+	public interface Runnable
+	{
+   		void run();
+	}
+
+
+Place the code for your task into the run method of your class:
+
+	public class MyRunnable implements Runnable
+	{
+   		public void run()
+   		{
+      		Task statements
+      		…
+   		}
+	}
+
+
+Create an object of your subclass:
+
+	Runnable r = new MyRunnable();
+
+
+Construct a Thread object from the runnable object:
+
+	Thread t = new Thread(r);
+
+
+Call the start method to start the thread:
+
+	t.start();
+	
+ 	- The start method of the Thread class starts a new thread that executes the run 
+ 	method of a Runnable objects
+ 	
+ - To wait a second we use the static sleep method of the thread class 
+ 	Thread.sleep(miliseconds);
+ 
+ - The sleep method puts the current thread to sleep for a given number of milliseconds
+ 	Putting a thread to sleep is risky, it might sleep to long and no longer be useful
+ 	to terminate a thread you interupt it
+ 	
+ - When a thread is interupted the most common response is to terminate the run method
+ 

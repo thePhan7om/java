@@ -1,0 +1,37 @@
+*Synchronising Object Access
+
+To solve problems such as the one you observed in the preceding section, use a lock object
+The lock object is used to control the threads that want to manipulate a shared resource
+
+Typically a lock object is added to a class whoes methods access shared resources
+
+public class BankAccount
+{
+	private Lock balanceChangeLock;
+	...
+	public BankAccount()
+	{
+		balanceChangeLock = new ReentrantLock();
+		...
+	}
+}
+
+All code that manipuliates the shared resource is surrounded by calls to lock and unlock the lock object
+
+balanceChangeLock.lock();
+manipulate the shared resources
+balanceChangeLock.unlock();
+
+This sequence of statements has a potential flaw, if the code between the calls to lock
+and unlock throws an exception, the call to unlock never happens this is a serious problem
+after an exception, the current thread continues to hold the lock , and no other thread
+can acquire it, to overcome this problem
+
+when a thead calls the lock method it owns the lock until it calls the unlock method, if a
+thread calls lock while another thread owns the lock the first thread is temporarily deactivated
+
+the thread scheduler periodically reactivates such a thread so it can try acquire the lock, 
+
+- by calling the lock method a thread acquires a lock object then no other thread can acquire
+the lock until the first thread releases the lock. 
+

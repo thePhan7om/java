@@ -1,0 +1,41 @@
+*Race Condidtions
+
+When threads share access to a common object they can conflict with each other, 
+To Demonstright the problems that can arise we will investicate a simple program
+create 2 sets of threads
+
+	- Each thread in the first set deposits $100
+	- Each thread in the second set withdraws $100
+	
+public run 
+{
+	try
+	{
+		for(int i =1; 1<= count i++)
+		{	
+			account.deposit(amount);
+			Thread.sleep(DELAY);
+		}
+	}
+	catch (InteruptedException e(){}
+	}
+	
+
+public void deposit(double amount)
+{
+   System.out.print(“Depositing” + amount);
+   double newBalance = balance + amount;
+   System.out.println(“, new balance is” + newBalance);
+   balance = newBalance;
+}
+
+Thread-1	Thread 2	Value
+-				-			0
+read			-			0
+-				read		0
+increment		-			0
+-				increment	0
+write			-			1
+-				write		1
+
+the expected result should be 2

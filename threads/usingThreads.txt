@@ -1,0 +1,19 @@
+* Terminating Threads
+
+- When the run method has finished executing the thread terminates, this is the normal 
+way to terminate a thread- implement the run method so that it returns when it determines
+no more work needs to be done. 
+
+- A Thread terminates when the run method terminates
+
+Sometimes it is neccisery to terminate a thread. 
+
+terminating threads can lead to dangerous situations where threads share resources. 
+
+Thread needs to release any resources it is using and do some clean up to notify a thread
+to terminate and clean up use
+	- t.interupt();
+		- doesnt actually terminate thread it sets a boolean flag that the run method checks 
+		
+		- if a thread is sleeping it cant execute code to check for interuptions therefor 
+		the sleep method is terminated 
