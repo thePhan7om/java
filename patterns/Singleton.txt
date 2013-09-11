@@ -1,0 +1,41 @@
+*Singleton
+
+One instance of a class or one value accessable globally in an application
+
+* Where
+	- Ensure unique instance by defining class as final to prevent cloaning
+	- may be extensible by the subclass by also making subclass final
+	- make method / variable public and static
+	- well controled initialiation of a class
+	
+* Example
+	- One file system, one Window Manager, one print spooler and TestEngine and one I/O socket
+	
+	to design a Singletonclass you need to make the class final so it cant be exteneded
+	make all constructors private to prevent a new one being created
+	
+	final class RemoteConnection{
+		private Connect con;
+		private static RemoteConnection rc = new RemoteConnection(connection);
+		
+		private RemoteConnection(connect c){
+		con = c
+		// do stuff
+		}
+		
+		public static RemoteConnection getRemoteConnection(){
+		return rc;
+		}
+		
+		public void setConnection(Connect c){
+		this(c);
+		
+	- Usage
+	RemoteConnection rconn = RemoteConnection.getRemoteConnection();
+	rcon.loadData();
+	
+	RemoteConnection rconn = new RemoteConnection(con) will fail for private constructor
+	
+	class Connection extends RemoteConnection() // will fail cause final class cant be subclassd
+	
+	

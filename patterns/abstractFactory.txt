@@ -1,0 +1,88 @@
+* Abstract Factory
+
+	- Provides one level if interface higher than the factory pattern, it is used to return several factories
+	
+* Where to use
+	- Creates familes of related or dependant objects like KIT
+	- Provides a class library of products exposing interface not implementation
+	- Needs to isolate concreate classes from their superclasses
+	- Try to enforce constraint
+	- An alternative to Facade
+	- Easily extensaible
+		- Related to 
+			- Factory
+			- Singleton
+			- Prototype
+			- Facade
+			
+* Example
+	- Suppose you need to write a program to show data in two differnt places, 
+	A Local and Remote database. you need to make a connection to a database before working 
+	on the data, in this case you have two choices, local or remote, 
+	
+	you could use an abstract Factory to design the following interface
+	
+	LocalMode >	Local								ConnectionFactory
+				  ^											^
+				  Remote < Remote Mode					DataManager
+				  
+class DataInfo(){}
+interface Local{
+DataInfo[] loadDB(String filename);
+}
+
+interface Remote extends Local{
+void connection2WWW(String URL)
+}
+
+class LocalMode implements Local
+{
+	
+	public  DataInfo[] loadDB(String name)
+	{
+		/// DO Stuff
+		return null;
+	}
+}
+
+class RemoteMode implements Remote
+{
+	public void connection2WWW(String URL)
+	{
+		// Do stuff
+	}
+	public  DataInfo[] loadDB(String name)
+	{
+		/// DO Stuff
+		return null;
+	}
+}	
+
+interface ConnectionFactory{
+Local getLocalConnection();
+Remote getRemoteConnection();
+}
+
+class DataManager implements ConnectionFactory{
+booleam local = false;
+DataInfo[] data;
+//... some stuff
+
+public Local getLocalConnection(){
+	return new LocalMode();
+}
+
+public Remote getRemoteConnection(){
+	return new RemoteMode();
+}
+
+public void loadData()
+{
+	if (local){
+		// do local 
+	}
+	else{
+		// do remote
+		}
+}
+}	

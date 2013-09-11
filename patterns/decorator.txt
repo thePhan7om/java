@@ -1,0 +1,49 @@
+* Decorator
+
+- Attach additional responsibilities or functions to an object dynamically or statically
+also known as a wrapper
+
+	- provide an alternative to subclassing
+	- add new function to an object without effecting others
+	- make a responsibilty easily added and removed dynamicall
+	- more flexable than static inheritance
+	
+* Example
+	JScollPane can use used to decoreate a JTextArea or JEditorPane, a window can be decorated
+	with differnt boarders
+	
+	- The Decorator pattern can be used in a non visual fashion, for Example BufferedInputStream
+	DataInputStream CheckedInputSteam are decorators for FilterInputSteam
+	
+	- Simple Example
+	
+	class Number{
+		public void print(){
+			//stuff
+		}
+	}
+	
+	class Decorator {
+		public Decorator(){
+			//Print Stuff
+			new Number().print();
+		}
+	}
+	
+	class SubNumber extends Number{
+		public SubNumber(){
+			super();
+			//sout stuff
+			print();
+		}
+	}
+	
+	class Test
+	//MAIN
+	new Decorator();
+	new SubNumber();
+	
+	both print stuff then the number
+	
+	could pass in coffees into the decorator and chain them up
+	

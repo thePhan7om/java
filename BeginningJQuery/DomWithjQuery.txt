@@ -16,3 +16,17 @@
 	
 	hide and show with 
 	.hide() and .show();
+	
+	
+- if you want to update some text within an element the best way is to do it using the text element
+$("p").text() = p.getText()
+$("p").text("hello"); = p.setText("hello)
+
+.text() escapes html
+if you want to insert html use .html()
+ 
+ .remove - removes an element from the dom
+ .empty - removes all elements below the selected one
+ .unwrap - removes the parent object of the selected
+ 
+ 

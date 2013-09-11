@@ -1,0 +1,23 @@
+*Selection Sort
+
+- The Selection Sort Algorthium sorts an array by repeatedly finding the smallest element
+in the unsorted tail section
+
+- [0][1][2][3][4]
+   11 9 17  5  12
+   
+ 	- First step find smallest element in this case 5 in element [3], move 5 to the begining
+ 	- need to swap with 11
+ - [0][1][2][3][4]
+    5  9 17 11 12
+    
+	- repeat until sorted 
+ - [0][1][2][3][4]
+    5  9 11 12 13
+
+
+// For array Length
+	// Find minimum position
+		//for array Length if element is smaller than i min  = element
+	// Swap the element at i with min
+	

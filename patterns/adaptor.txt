@@ -1,0 +1,46 @@
+* Adapter
+
+- Convert existing interfaces into a new interface to achieve compatibility and reusability
+
+Where
+	- To match an interface
+	- to make unrelated classes work together
+	- multiple compatiblity
+	- make plugable kit
+	- Highly resuable class
+	
+	
+Example
+
+Java Example Classes - WindowAdapter, ComponentAdapter, ContatinerAdapter
+
+- WindowListener interface as 7 methods whenever you implement this interface you need to
+implement all 7 methods
+
+The WindowAdapter implements this interface and makes seven empty methods when you implement 
+WindowAdapter you can chose to use the method you want. 
+
+public interface WindowListener {
+	public void windowClosed();
+	public void windowOpen();
+	public void windowIconfieed();
+	public void windowDeiconfied();
+	}
+	
+	public class WindowAdapter implements WindowListener
+	{
+	public void windowClosed(){}
+	public void windowOpen(){}
+	public void windowIconfieed(){}
+	public void windowDeiconfied(){}
+	}
+	
+	public class NewWindow extends WindowAdapter{
+	public void windowOpen(){
+	// Stuff
+	}
+	public void windowIconfieed(){
+	//stuff
+	}
+	}
+	

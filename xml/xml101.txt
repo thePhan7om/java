@@ -1,0 +1,46 @@
+* XML Tags And Documents
+
+- XML allows you to encode complex data independent of any programming language in a form that
+a recipient can easily parse
+
+- XML files are readable by a computer and by humans
+- XML formatted data files are resilient to change
+
+- XML describes the meaning of data not how to display them
+
+- An XML Document starts out with an XML declaration and contains elements and text
+
+* Parsing XML Document
+
+- A Parser is a program that reads a document, checks whether it is syntactically correct and takes some action
+
+- A Streaming Parser reports the building blocks of an XML Document, a A Tree- based parser builds
+a document tree
+
+- A DocumentBuilder can read an XML document from a file, URL or input Steam, the resultant object becomes a tree
+
+- An Xpath describes a node or node set using a notation similar to that of directory paths
+
+-	/item/item[0]/quantity
+
+-The Document Interface has methods to create elements and text nodes
+
+* Validating XML
+
+- a DTD Document Type Definition is a sequence of rules that describes the valid child elements and attributes of each 
+element type
+	- valid attributes
+	- valid child elements
+	
+	- DTDs cannot force an element to be of a type only text string
+- Schema is like a DTD but has more precise rules. 
+- for each element you specify the element and type for example this constrains to a int
+<xsd:element name="quantity" type="xsd:integer"/.
+
+you can specify object types in a schema
+
+<xsd:compleType name="Address">
+	<xsd:sequence>
+		<xsd:element name="name" type = "xsd:string"/>
+	</xsd:sequence> 
+</xsd:complexType>

@@ -1,0 +1,63 @@
+* Factory
+
+- Provides an abstraction or interface and lets the subclass or implementing class
+decide which class or method should be instansitated
+
+Where to use
+	- Connect parallel class hierachies
+	- class wants its subclass to specify an object
+	- A family of objects that need to be seperdated usuing a shared interface
+	- Hide concete class from a client
+	- provide hooks for subclasses
+	
+*Example
+
+A company has a website to display resting result from a plain file, recently the company 
+purchased a new machine which produces a binary data file, another machine is comming that 
+will produce another data file, you job is to provide a way to display the data on the screen
+
+interface Display {
+	//load a file
+	public void load(String filename);
+	//parse the file 
+	public void formatConsistency()
+}
+
+class CVSFile implements Display{
+
+	public void load(String filename){
+	// print im a csv
+	}
+
+	public void formatConsistency(){
+	// format a csv
+	}
+}
+
+class XMLile implements Display{
+
+	public void load(String filename){
+	// print im a xml
+	}
+
+	public void formatConsistency(){
+	// format a xml
+	}
+}
+
+class TestFactory{
+
+//main
+	Display display =null;
+	if (x ==1)
+	{
+		display = new CVSFile();
+	}
+	else if (x ==2)
+	{
+		display = new XMLFile();
+	}
+	else if (x ==3)
+	{
+		display = new OtherThingFile();
+	}
