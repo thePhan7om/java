@@ -1,0 +1,20 @@
+* Basics of JQuery
+
+- Javascript = document.getElementByID("example");
+- jQuery = $("#example");
+
+- jQuery provided a reliable cross-browser method of interacting with DOM 
+
+- DOM is the representation of elements on a page which are structured and have rules on
+how to model them 
+
+- $("body").css("background","red");
+	- get the body tag make it red
+	
+$(function() {}); = jQuery run then document.ready
+
+var box = $("#box") 
+	// more efficent that 
+	$("#box").doSomething();
+	$("#box").doSomethingElse();
+

@@ -1,0 +1,49 @@
+*Traversing the DOM
+
+- Finding elements by ID
+$("#element")
+$("#AnotherElement");
+
+-Finding elements by css
+$(".column");
+$(".header");
+
+-Finding Elements by tag
+$("body);
+$("div");
+
+searching By ID is best. 
+
+$("div>ul a");
+$("div#main p strong");
+$("div.main p>li a");
+
+jQuery will naturally do the loop to find the elements, but the more complex they are the 
+longer it takes to run
+
+so always use ID if you can
+
+
+*Traversal Methods
+
+traversal methods allow us to jump round the DOM to find specific elements, a Traversal method
+will help get from A to B
+
+<p>para 1</p>
+<p>para 2</p>
+<p>para 3</p>
+
+$("p")
+[<p>para 1</p>,<p>para 2</p>,<p>para 3</p>]
+
+alert($("p".eq(0).text()); returns para 1;
+
+$("p:first"); = first element
+$("p:last"); = last element
+$("p:eq(0)"); = element 0
+
+* chaining methods
+$(".first-paragraph").siblings().andSelf() = get sibling elements of elements with the class
+.first-paragraph and the element themselfs
+
+

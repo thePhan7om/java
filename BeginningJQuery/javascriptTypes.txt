@@ -1,0 +1,19 @@
+* JavaScript Types
+
+- Int, String, boolean, Array and Object
+
+var testVariable = 5
+testVariable = 'Jack' is valid in javascript
+
+- arrays can contains values of any type
+
+// Javascript object
+var car = {
+wheelCount: 4,
+colour: red,
+seatCount:5,
+carMaxSpeed:99
+};
+
+car.wheelCount, car["wheelCount"] both return 4
+

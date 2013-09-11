@@ -1,0 +1,18 @@
+* DOM manipulation with jQuery 
+	*CSS 
+	$("div").css("width");
+	$("div").css("margin-right");
+	$("div").css("color");
+	
+	$("div").css("color","red");
+	
+	- can add and remove css classes from a element
+	 	.addClass .removeClass
+	-can see if a element has a class with 
+		.hasClass
+
+	- can add multiple classes with 
+		.addClass
+	
+	hide and show with 
+	.hide() and .show();
