@@ -1,0 +1,30 @@
+* Internet Application Summary 
+
+	* Describe the architecture of a web application
+		- UI of a web application is displayed in a web browser
+		- When a form is submitted, the names and values of the form elements are sent to 
+			the server
+		-Upon receiving the form data, the web server sends a new web page to the browser
+	* Describe the architecture of a JSF application
+		- JSF pages contain HTML and JSF tags
+		- JSF Container converts JSF tags to HTML 
+		- A managed bean is an object that is controlled by the JSF container
+		- A Bean with session scope is available for multiple requests by the same browser
+		- the JSF technology enables the separation of presentation and business logic
+	* Explain how properties are defined in managed beans and accessed in value expressions
+		- properties of software component can be accessed without having to write java code
+		- JavaBeans is a class that exposes properties through its get and set methods
+		- In the value expression of an output tag, only the property getter is called
+		- in the value expression only the input tag the setter is called
+	* Navigation between pages
+		- The outcome String of an action determines the next page that the container sends
+		to the browser
+		- the method expression specifies a bean and a method that should be invoked on the bean
+	* Use common JSF components for designing a user interface
+		- There are JSF components for input choices buttons and images
+		- the value attribute of an input component denotes the value the user supplies
+		- the f:selectItems tag is to specify all choices for a component
+	* Developer applications that use JSF and a database
+	- 3 tier application has separate tiers for presentation, logic and data storage
+	- you define data sources in the JSF container and use resource annotations to initialise them
+	

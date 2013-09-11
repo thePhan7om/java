@@ -1,0 +1,42 @@
+* Architecture of a Web Application
+
+- A Web application is an application whose user interface is displayed in a web browser
+
+- The browser sends a request to the server using HTTP, when a user clicks a link the 
+request is simply asking for the page attached to the link
+
+	Get /index.html HTTP/1.1
+	Host: host.com
+
+When the user fills data in a form and clicks submit an HTTP request includes the data 
+that the user provided
+
+Upon receiving the form data the web server sends a new web page to the browser
+
+
+* Architecture of a JSF Application
+
+- a JavaServerFaces JSF page contains HTML and JSF tags
+
+- The JSF Container converts a JSF page into an HTML page by replacing all 
+JSF Tags with text and HTML tags
+
+	- The purpose of a JSF page is to generate an HTML page, the basic process is
+		- HTML tags present in the JSF page are retained, these are static parts
+		- JSF Tags are translated into HTML. this translation is dynamic, it depends on 
+		the state of java objects that are associated with the tags
+		
+	Browser requests a JSF page, processed by an JSF Container, which converts it to a 
+	HTML file sent by the web server over the internet and rendered on the users web browser
+	
+* Managed Beans
+
+#{timeBean.time} is a value expression, value expressions invoke method calls on java objects
+these java objects are called Managed Beans
+
+- A Managed bean is an object controlled by the JSF Container
+	the JSF container creates a Managed Bean when it is first used in a value expression. 
+	the scope of the managed bean determines which clients can access the object and how long 
+	the object will stay alive. 
+	
+-A SessionScoped bean is one which is available for multiple requests by the same browser

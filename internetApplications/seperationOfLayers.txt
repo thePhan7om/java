@@ -1,0 +1,35 @@
+* Separation of Presentation and Business Logic
+
+	- The JSF technology enables the separation of presentation and business logic
+		- Presentation is the UI 
+		- Business Logic is backend stuff
+	
+* Deploying a JSF Application
+	- To run a JSF application you need a web server with a JSF container
+	
+* Javabeans components
+
+	- A Software component is an entity the encapulates functionality and can be plugged
+	into a software system without programming, a managed bean is an example of a software 
+	component
+	
+	- A Javebean is a class that exposes properties through its get and set methods
+	
+	- A Javabean  must have a constructor with no arguements
+	- A Javabean must have methods for accssing the component properties that follow
+	the get/set naming convention
+	
+	- the value expression of an output tag only the property getter is called
+	- in the value expressions of an input tag the property setter is called when the page
+	is submitted
+	
+* Navigation between pages
+
+- THe outcome string of an action determines the next page that the JSF container sends 
+to the browser
+
+- A method expressions specifies a bean and a method that should be invoked on a bean
+
+
+
+	
