@@ -2,30 +2,30 @@
 
 you can use lock objects to ensure that shared data are in a consistent state when several
 threads access them, however locks can lead to another problem, it can happen that one thread
-acqures a lock and then waits for another thread to do some essential work 
+acquires a lock and then waits for another thread to do some essential work 
 
 if the other thread is waiting for the same lock nether thread can be processed such a situation
 is called deadlock
 
-- A Deadlock occurs if no thread can proceed beauce each thread is waiting for another to 
+- A Deadlock occurs if no thread can proceed beach each thread is waiting for another to 
 do some work first. 
 
-- Calling await on a condidtion object makes the current thread wait and allows another 
+- Calling await on a condition object makes the current thread wait and allows another 
 thread to acquire the lock object
 
 A Waiting thread is blocked until another thread calls SignalAll or signal on the condition 
-objects for whch the thread is waiting. 
+objects for which the thread is waiting. 
 
 
-* Synchronized Methods
+* Synchronised Methods
 
 Locks and Condition classes were added in java 5 they overcome limitations of thread syncronization
 
 the classic method of locking
 	- every java object has one built in lock and one built in condition variable. 
 	the lock works in the same way as a reentrantLock object however to acquire the lock
-	you call a syncronized method
-		tag thread sensitive code with the synchronized reserved work
+	you call a synchronised method
+		tag thread sensitive code with the synchronised reserved work
 		
-	When a thread calls a synchronized method it owns the objects lol until it returns and
+	When a thread calls a synchronised method it owns the objects lol until it returns and
 	and unlocks the object
