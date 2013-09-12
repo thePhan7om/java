@@ -1,0 +1,14 @@
+* Business Delegate
+
+- An intermediate class decouples between presentation-tier, clients and services
+
+	- Simplify a complex relationship
+	- reduce couplng
+	- cache results
+	- cur down on round trips
+	- hide underlying implememtation
+	
+* Example
+	Make a class deal with lookups and exceptions acting as a representative of
+	client components
+	

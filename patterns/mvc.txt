@@ -1,0 +1,15 @@
+* MVC
+
+- Model/View/Controller is an architecture design pattern, Model means data, View means 
+representation and Controller works on data and representation. 
+
+Where
+	- Application Architecture design
+	- Any data related design
+	- decouple complex objects to improve maintainablity
+	- increase reuse
+	- achieve design flexibilty
+	
+	MVC consists of 3 kinds of objects, 
+	
+	

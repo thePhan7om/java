@@ -1,0 +1,14 @@
+*Observer
+
+* Where 
+	- One change affects one or many objects
+	- many object behaviours depend on one object state
+	- publisher/subscriber
+	- keep classes from becoming tightly coupled
+	
+* Example
+	-Observer pattern is often use in GUI application for example defining a one-to-many dependancy 
+	between objects so that when one object changes state all its dependants are notified and 
+	automatically updated. 
+	
+	

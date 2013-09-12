@@ -1,0 +1,62 @@
+*Pattern Usages in FDMS/Portal
+
+	* MVC
+		- Both, War contains the View
+		- Business logic is in the JAR
+		- DAO's restrict access to DB
+		
+	*  DAO 
+		- DAO classes exist for each entity, 
+		- hiding the implementation away from business logic
+		- encapsulates all database calls for each entity
+		
+	* Singleton
+		- DAOFactory
+		- There is one single application scoped DAOFactory
+		- which has one entity manager 
+		- when called provides a new instance of a specified DAO type
+	
+	* Factory 
+		- Metadata
+		- there are different types of metadata that are possible in our system 
+			- e.g Drawing, Sheet, Document
+		- A Metadata Factory controls instantiation of the correct type dependant on the object
+		passed into it
+	
+	* Facade
+		- Close Batch API call
+		- Client passes some data and executes closebatch
+		- close batch splits data into objects
+		- objects are then each validated
+		- if validation is passed the objects are
+		- stored in the database
+		- there contents are indexed
+		- they are made applicable to assets
+		- the staging area is cleaned up 
+		- the batch is closed
+		- the user is told when the server the server is closed
+			
+	* DTO 
+		- In Portal data is passed from the service layer to the presentation layer
+		- it is not passed as entity objects, 
+		- these objects are converted into a DTO appropriate for the page being displayed
+		
+	* Composite Entity
+		- A DrawingBrowseObject is a composite entity 
+		- due to a limitation in hibernate to do one-one lazy loading 	
+			- we had to create composite entities to allow us to query data with out 
+			having to retrieve a large blob file 
+			- Composite entities are made up of basic types representing the required data
+			- Hibernate then populates this data from the result of a query without the large objects
+			
+	* Business Delegate
+		- Sit between the front end pages and the business logic services
+		- Business delegate captures any input from the front end 
+		- Business delegate converts the input into a DTO 
+		- Business delegate then calls the corresponding service passing DTO 
+		- service executes and returns a DTO with the relevant result. 
+		- Business delegate makes the output DTO available to the front end as required
+		
+	Front-End > BusinessDelegate  <>   BusinessService > DAO > Database
+								 DTO
+	

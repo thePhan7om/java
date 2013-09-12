@@ -1,0 +1,9 @@
+* DAO 
+
+Adapt a uniform interface to access mutliple databases
+
+	- Need to access mutliple data sources
+	- Lack of uniform APIS
+	- Hide data source implementation details from clients
+	- Solve differences in the API which is used to access differnt persistent  storeage
+	

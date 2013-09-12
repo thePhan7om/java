@@ -1,0 +1,17 @@
+* Proxy
+
+Use a simple object to represent a complex one or provide a placeholder for
+another object to control access to it
+
+* Where
+	- if creating an object is to expensive for time or memory
+	- postpone creation until you need the object
+	- load a large image
+	- load a remote object over a network
+	
+* Example
+
+	- When loading a large image you may need to create some light object to represent it
+	untill the large object is fully loaded. a proxy often as the same methods as the 
+	object it represents
+	

@@ -1,0 +1,12 @@
+* Transfer Object
+	Using a serializable class to act as a data carrier grouping attributes forming a composit
+	value and working as a return type from remote business method
+	
+  *Where
+  
+  - Get related values from remote business method
+  - fetch multiple values in one trip
+  - decrease network traffic
+  - minus latency and server usage
+  
+	

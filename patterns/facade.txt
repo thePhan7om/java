@@ -1,0 +1,50 @@
+* Facade
+
+Make Complex system simpler by providing a unified or general interface which is a higher layer than
+the sub systems
+
+Where
+- Want to reduce complexity
+- Decouple sub systems
+- Make entry point for sub systems
+- 
+
+Example
+
+	JDBC is a facade pattern, database design is complicated, JDBC is used to connect to a database
+	and manipluate data, without exposing details
+	
+	interface General{
+		public void accessGeneral();
+	}
+	
+	interface Special extends General 
+	{
+		public void accessSpecial();
+	{
+	
+	interface Private extends General 
+	{
+	public void accessPrivate();
+	}
+	
+	class GeneralInfo implements General{
+		public void accessGeneral(){
+			//stuff
+		}
+	}
+	
+		
+	class SpecialInfo extends GeneralInfo implements Special{
+		public void accessGenral(){
+			//stuff
+		}
+	}
+	
+		
+	class PrivateInfo extends SpecialInfo implements Private{
+		public void accessGenral(){
+			//stuff
+		}
+	}
+	
